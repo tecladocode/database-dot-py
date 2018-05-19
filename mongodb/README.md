@@ -17,7 +17,7 @@ If you want to learn more about Python and MongoDB, our [Python Web Course](http
 
 Usage of this `database.py` is simple. Before using, initialise the library connection. Then, use the provided interface to interact with MongoDB.
 
-Before initialising make sure to have exported a `MONGODB_URI` environment variable. For a local server, this would be `mongodb://localhost:27017
+Before initialising make sure to have exported a `MONGODB_URI` environment variable. For a local server, this would be `mongodb://localhost:27017`
 
 ```python
 from database import Database
