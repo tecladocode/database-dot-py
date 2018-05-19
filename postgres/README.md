@@ -1,3 +1,8 @@
+- [Database.py for PostgreSQL](#databasepy-for-postgresql)
+    - [Usage](#usage)
+        - [Get a cursor from the connection pool](#get-a-cursor-from-the-connection-pool)
+        - [Get a connection manually from the pool](#get-a-connection-manually-from-the-pool)
+
 # Database.py for PostgreSQL
 
 This `database.py` can be directly used with your PostgreSQL connection.
