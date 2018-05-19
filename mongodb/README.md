@@ -1,11 +1,11 @@
 - [Database.py for MongoDB](#databasepy-for-mongodb)
     - [Usage](#usage)
     - [Interface](#interface)
-        - [`insert`](#insert)
-        - [`find`](#find)
-        - [`find_one`](#find_one)
-        - [`update`](#update)
-        - [`remove`](#remove)
+        - [`insert(collection, data)`](#insertcollection-data)
+        - [`find(collection, query)`](#findcollection-query)
+        - [`find_one(collection, query)`](#find_onecollection-query)
+        - [`update(collection, query, data)`](#updatecollection-query-data)
+        - [`remove(collection, query)`](#removecollection-query)
 
 # Database.py for MongoDB
 
@@ -42,7 +42,7 @@ Available methods are:
 - [`update(collection, query, data)`](#update)
 - [`remove(collection, query)`](#remove)
 
-### `insert`
+### `insert(collection, data)`
 
 To insert a new user in a collection `'users'`, with username `'jose'` and password `'123'`.
 
@@ -59,7 +59,7 @@ Database.insert(
     })
 ```
 
-### `find`
+### `find(collection, query)`
 
 To find all users created before or exactly on timestamp `'1524754833'`.
 
@@ -73,7 +73,7 @@ Database.find(
     query={'created': { '$lte': '1524754833'}})
 ```
 
-### `find_one`
+### `find_one(collection, query)`
 
 This retrieves the top element from the collection matching the query.
 
@@ -89,7 +89,7 @@ Database.find_one(
     query={'username': 'jose'})
 ```
 
-### `update`
+### `update(collection, query, data)`
 
 To update the user with username `'jose'` to having username `'rolf'`.
 
@@ -104,7 +104,7 @@ Database.update(
     data={'username': 'rolf'})
 ```
 
-### `remove`
+### `remove(collection, query)`
 
 To remote a user with username `'jose'`.
 
