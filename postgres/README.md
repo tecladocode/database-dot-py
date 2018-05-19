@@ -2,6 +2,8 @@
 
 This `database.py` can be directly used with your PostgreSQL connection.
 
+If you want to learn more about Python and PostgreSQL, our [comprehensive course](https://www.udemy.com/the-complete-python-postgresql-developer-course/?couponCode=GITHUB) is a great place to start.
+
 ## Usage
 
 The first thing to do is initialise the database, which starts all the connections to your database server.
